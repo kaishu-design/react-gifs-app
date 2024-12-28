@@ -1,9 +1,13 @@
 import React from 'react'
 
-const SelectedGif = () => {
+const SelectedGif = ({selectedGif}) => {
+
   return (
-    <div>SelectedGif</div>
+    <div className='selected-gif'>
+      <img src = {selectedGif}
+           alt="selected gif"
+            />
+    </div>
   )
 }
-
 export default SelectedGif

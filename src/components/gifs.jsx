@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Gifs = () => {
+const Gifs = ({srcs, clickGif}) => {
   return (
-    <div>Gifs</div>
+    <div>
+      {srcs.map((src, index) => (
+        <img key={index} src={src} alt="gifs" onClick={() => clickGif(src)} />
+      ))}
+    </div>
   )
 }
 

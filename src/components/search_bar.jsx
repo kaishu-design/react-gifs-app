@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const SearchBar = () => {
 
   // const [search, setSearch] = useState;
   return (
     <input
-    value="search.term"
+    value=""
     type="text"
     className="form-control form-search"
     />

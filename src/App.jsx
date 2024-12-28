@@ -6,33 +6,33 @@ import './App.scss';
 
 function App() {
 
-  // const [searchQ, setSearchQ] = useState('idcomeshere')
+  // define state
+  const [searchQuery, setSearchQuery] = useState('8H80IVPjAdKY8')
   const [selectedGif, setSelectedGif] = useState('https://media3.giphy.com/media/8H80IVPjAdKY8/giphy.webp')
+
+  // functions
   const handleSelectedGif = (selectedSrc) => {
     setSelectedGif(selectedSrc)
   }
 
+  // const apiCall () => {
+  //   setSearchQuery
+  // }
+
+  // variables
   const gifIDs = ["P3CZolxd8DeRy4g4fM","8H80IVPjAdKY8","1jC6xbuNBZp2CfIs0b"]
-  const createsrcs = (gifIDs) => {
-    let srcs = [];
-    gifIDs.forEach((gifID) => {
-      srcs.push(`https://media3.giphy.com/media/${gifID}/giphy.webp`)
-    })
-    return srcs
-  }
-  const srcs = createsrcs(gifIDs)
-  // const src = "https://media3.giphy.com/media/P3CZolxd8DeRy4g4fM/giphy.webp"
 
   return (
     <div className="App">
 
       <div className='left-scene'>
-        <SearchBar/>
+        <SearchBar />
+        {/* listGifs={apiCall} */}
         <SelectedGif selectedGif={selectedGif}/>
       </div>
 
       <div className='right-scene'>
-        <Gifs srcs={srcs} clickGif={handleSelectedGif}/>
+        <Gifs gifIDs={gifIDs} clickGif={handleSelectedGif}/>
       </div>
 
     </div>

@@ -2,13 +2,12 @@ import React from 'react'
 
 const SearchBar = ({listGifs}) => {
 
-  // const [search, setSearch] = useState;
+  // stateを使って検索枠内の値をpassする
   return (
     <input
-    value="value"
     type="text"
     className="form-control form-search"
-    onChange={(value)=>listGifs}
+    onChange={()=>listGifs("dog")}
     />
   )
 }

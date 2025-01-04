@@ -11,6 +11,7 @@ function App() {
   const [gifs, setGifs] = useState(gifIDs)
   const [selectedGif, setSelectedGif] = useState('https://media3.giphy.com/media/8H80IVPjAdKY8/giphy.webp')
 
+
   const handleSelectedGif = (selectedSrc) => {
     setSelectedGif(selectedSrc)
   }

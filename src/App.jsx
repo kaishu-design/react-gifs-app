@@ -6,7 +6,7 @@ import './App.scss';
 import { GiphyFetch } from '@giphy/js-fetch-api'
 
 function App() {
-  const gifIDs = ["P3CZolxd8DeRy4g4fM","8H80IVPjAdKY8","1jC6xbuNBZp2CfIs0b"]
+  const gifIDs = ["cLcxtL1z8t8oo","8H80IVPjAdKY8","21PV0Su6USswD76iLv"]
 
   const [gifs, setGifs] = useState(gifIDs)
   const [selectedGif, setSelectedGif] = useState('https://media3.giphy.com/media/8H80IVPjAdKY8/giphy.webp')

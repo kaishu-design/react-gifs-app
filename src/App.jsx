@@ -9,8 +9,7 @@ function App() {
   const gifIDs = ["cLcxtL1z8t8oo","8H80IVPjAdKY8","21PV0Su6USswD76iLv"]
 
   const [gifs, setGifs] = useState(gifIDs)
-  const [selectedGif, setSelectedGif] = useState('https://media3.giphy.com/media/8H80IVPjAdKY8/giphy.webp')
-
+  const [selectedGif, setSelectedGif] = useState(null) // 'https://media3.giphy.com/media/8H80IVPjAdKY8/giphy.webp'
 
   const handleSelectedGif = (selectedSrc) => {
     setSelectedGif(selectedSrc)
